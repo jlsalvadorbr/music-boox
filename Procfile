@@ -1,1 +1,1 @@
-web:	java -jar target/dependency/jetty-runner.jar --port 8080 target/music-boox.war
+web:	java -jar target/dependency/jetty-runner.jar --port $PORT target/music-boox.war
