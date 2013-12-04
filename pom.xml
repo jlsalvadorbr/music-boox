@@ -46,7 +46,20 @@
 		<artifactId>mockito-all</artifactId>
 		<version>1.9.5</version>
 	</dependency>
+	<dependency>
+    	<groupId>jfugue</groupId>
+        <artifactId>jfugue</artifactId>
+        <version>4.0.3</version>
+    </dependency>
   </dependencies>
+  
+  <repositories>
+  	<repository>
+ 		<id>clojars-repo</id>
+ 		<url>http://clojars.org/repo/</url>
+	</repository>
+  </repositories>
+  
   <build>
     <finalName>music-boox</finalName>
     <plugins>
