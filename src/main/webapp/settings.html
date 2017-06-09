@@ -1,0 +1,23 @@
+<h1>Settings</h1>
+
+<p><span style="font-weight:bold">Test your audio</span></p>
+
+<div ng-controller="SettingsController">
+	<form ng-submit="apply()">
+		<input type="radio" ng-model="audioSystem" value="javascript" checked> Javascript<br>
+	 	<input type="radio" ng-model="audioSystem" value="applet" checked> Applet<br>
+		<button type="submit">Apply</button>
+	</form>	
+</div>
+
+<div ng-controller="PlayerController">
+	<form ng-submit="sendPost()">
+    	<input type="text" ng-model="scorePost" value="C D E F G A B"/>
+    	<button type="submit">Test POST</button>
+	</form>
+	
+	<form ng-submit="sendGet()">
+    	<input type="text" ng-model="scoreGet" value="C D E F G A B"/>
+    	<button type="submit">Test GET!</button>
+	</form>
+</div>

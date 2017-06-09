@@ -5,8 +5,8 @@ import java.util.List;
 import musicboox.model.Composer;
 
 public interface ComposerRepository {
-	
-	public List<Composer> findComposers();
-	
+
+  public List<Composer> findComposers();
+
 
 }

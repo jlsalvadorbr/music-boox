@@ -7,18 +7,18 @@ import musicboox.repository.ComposerRepository;
 
 public class JdbcComposerRepositoryImpl implements ComposerRepository {
 
-	private JdbcConnectionFactory jdbcConnectionFactory;
-	
-	JdbcComposerRepositoryImpl(JdbcConnectionFactory jdbcConnectionFactory) {
-		this.jdbcConnectionFactory = jdbcConnectionFactory;
-	}
+  private JdbcConnectionFactory jdbcConnectionFactory;
 
-	@Override
-	public List<Composer> findComposers() {
-		return null;
-	}
+  JdbcComposerRepositoryImpl(JdbcConnectionFactory jdbcConnectionFactory) {
+    this.jdbcConnectionFactory = jdbcConnectionFactory;
+  }
 
-	JdbcConnectionFactory getJdbcConnectionFactory() {
-		return jdbcConnectionFactory;
-	}
+  @Override
+  public List<Composer> findComposers() {
+    return null;
+  }
+
+  JdbcConnectionFactory getJdbcConnectionFactory() {
+    return jdbcConnectionFactory;
+  }
 }

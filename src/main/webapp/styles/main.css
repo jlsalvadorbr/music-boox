@@ -1,0 +1,59 @@
+html,body{
+height:100%;
+}
+
+*{
+margin:0;
+  padding:0;
+}
+.wraper{
+height:100%;
+  overflow:hidden;
+}
+.top {
+  top:0;
+  height: 92px;
+}
+.left {
+    width: 178px;
+    float:left;
+  min-height:100%;
+}
+.main {
+  margin-left:178px;
+  min-height:100%;
+ }
+ 
+.topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar li {
+    display: inline;
+}
+
+.sidebar li input {
+	position: absolute;
+	left: 0;
+	margin-left: 0;	
+	cursor: pointer;
+}
+
+.sidebar li label {
+	display: block; 	
+	padding-left: 37px;
+	coloer: red;
+}
+
+.sidebar li input + ol {
+	margin: -0.938em 0 0 -44px;
+	display: block;	
+}
+
+.sidebar li input + ol > li {
+	display: none;
+	margin-left: -14px;
+	padding-left: 1px;
+}

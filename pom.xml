@@ -25,6 +25,16 @@
 		<version>1.2</version>
 	</dependency>
 	<dependency>
+	    <groupId>org.glassfish.jersey.containers</groupId>
+	    <artifactId>jersey-container-servlet</artifactId>
+	    <version>2.22.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.glassfish.jersey.media</groupId>
+		<artifactId>jersey-media-json-jackson</artifactId>
+		<version>2.22.1</version>
+	</dependency>
+	<dependency>
 		<groupId>org.hsqldb</groupId>
 		<artifactId>hsqldb</artifactId>
 		<version>2.3.1</version>
@@ -56,6 +66,16 @@
         <artifactId>jfugue</artifactId>
         <version>4.0.3</version>
     </dependency>
+    <dependency>
+		<groupId>javax.cache</groupId>
+		<artifactId>cache-api</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jsr107.ri</groupId>
+		<artifactId>cache-ri-impl</artifactId>
+		<version>1.0.0</version>
+	</dependency>
   </dependencies>
   
   <repositories>

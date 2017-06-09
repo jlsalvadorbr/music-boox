@@ -1,0 +1,15 @@
+<h1>Applet</h1>
+
+<div ng-controller="PlayerController">
+	<form ng-submit="sendApplet()">
+    	<input type="text" ng-model="scoreApplet" value="C D E F G A B"/>
+    	<button type="submit">Test Applet</button>
+	</form>
+</div>
+
+<button onclick="stopAudioClip()">Stop</button> 
+
+<applet name="MidiPlayerApplet" code="applet.MidiPlayerApplet.class" codebase="/music-boox/applet" archive="music-boox.jar" height="300" width="300"/>
+<!--<object name="MidiPlayerApplet2" height="300" width="300">
+	<param name="code" value="applet.MidiPlayerApplet.class">
+</object>-->
