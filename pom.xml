@@ -9,14 +9,14 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-    <java.version>1.7</java.version>
+    <java.version>1.8</java.version>
   </properties>
 	
   <dependencies>
   	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>javax.servlet-api</artifactId>
-		<version>3.0.1</version>
+		<version>3.1.0</version>
 		<scope>provided</scope>
 	</dependency>
 	<dependency>
@@ -65,7 +65,17 @@
     	<groupId>jfugue</groupId>
         <artifactId>jfugue</artifactId>
         <version>4.0.3</version>
-    </dependency>
+		<exclusions>
+			<exclusion>
+				<groupId>org.clojure</groupId>
+				<artifactId>clojure</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>org.clojure</groupId>
+				<artifactId>clojure-contrib</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
     <dependency>
 		<groupId>javax.cache</groupId>
 		<artifactId>cache-api</artifactId>
